@@ -1,12 +1,19 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Flashcard from "./views/flashcards/Flashcard";
 import Landing from "./views/landing/Landing";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <Router>
-      <Route exact path="/flashcards" component={Flashcard} />
-      <Route exact path="/" component={Landing} />
+      <Navbar />
+      <main className="bg-green-200 grid grid-cols-6">
+        <Switch>
+          <Route exact path="/flashcards" component={Flashcard} />
+          <Route exact path="/" component={Landing} />
+        </Switch>
+      </main>
+      <footer className="bg-green-900">Footer</footer>
     </Router>
   );
 }

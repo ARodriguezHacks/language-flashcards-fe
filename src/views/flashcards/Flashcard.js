@@ -16,12 +16,12 @@ function Flashcard() {
     getFlashcards();
   };
 
-  // useEffect(() => {
-  //   getFlashcards();
-  // }, []);
+  useEffect(() => {
+    getFlashcards();
+  }, []);
 
   return (
-    <div className="container sm">
+    <div className="container">
       <h1>Flashcards Page</h1>
       {flashcards.length > 0 ? (
         <ul>
