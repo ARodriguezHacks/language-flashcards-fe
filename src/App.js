@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <main className="bg-green-200 grid grid-cols-6">
+      <main className="bg-green-200">
         <Switch>
           <Route exact path="/flashcards" component={Flashcard} />
           <Route exact path="/" component={Landing} />
