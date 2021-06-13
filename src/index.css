@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card {
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.top-card,
+.bottom-card {
+  backface-visibility: hidden;
+}
+
+.card-flip {
+  transform: rotateX(180deg);
+}
+
+.bottom-card {
+  transform: rotateX(180deg);
+}
