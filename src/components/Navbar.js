@@ -1,11 +1,14 @@
 import { NavLink } from "react-router-dom";
+import { ReactComponent as Logo } from "../assets/logo.svg";
 
 function Navbar() {
   return (
     <nav className="bg-red-300">
       <ul className="grid grid-cols-6 grid-cols-1 py-4 justify-items-center">
         <li className="col-span-2">
-          <NavLink to="/">Logo</NavLink>
+          <NavLink to="/">
+            <Logo height="34" width="34" />
+          </NavLink>
         </li>
         <li className="hover:text-white">
           <NavLink to="/flashcards" activeClassName="text-white">
