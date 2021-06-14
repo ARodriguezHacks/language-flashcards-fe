@@ -1,7 +1,7 @@
-function Login() {
+function SignUp() {
   return (
-    <div className="container mx-auto">
-      <h1 className="text-3xl p-4">Login Page</h1>
+    <div className="container mx-auto min-h-screen">
+      <h1 className="text-3xl p-4">Sign Up Page</h1>
       <div className="grid grid-cols-6 grid-rows-6 gap-8 h-80 py-4">
         <form className="grid grid-cols-6 gap-y-2 col-span-3">
           <label htmlFor="email" className="block col-span-6">
@@ -14,7 +14,7 @@ function Login() {
           <input type="password" className="col-span-6 rounded-md h-8" />
           <button
             type="submit"
-            className="rounded bg-gradient-to-r from-blue-500 to-green-400 py-1"
+            className="rounded bg-gradient-to-r from-blue-500 to-green-400"
           >
             Log In
           </button>
@@ -32,11 +32,4 @@ function Login() {
   );
 }
 
-{
-  /* <div className="container mx-auto">
-  <h1>Flashcards Landing Page</h1>
-  <div className="grid grid-cols-4 grid-rows-6 gap-2 h-80"></div>
-</div>; */
-}
-
-export default Login;
+export default SignUp;
