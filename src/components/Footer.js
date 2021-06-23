@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="bg-green-900 bg-gradient-to-br from-green-400 to-blue-500 h-40">
+    <footer className="grid grid-cols-12 bg-green-900 bg-gradient-to-br from-green-400 to-blue-500 h-40">
       <div>
         Icons made by{" "}
         <a href="https://www.freepik.com" title="Freepik">
